@@ -110,8 +110,6 @@ export default function CommentSection({ postId }) {
         method: "DELETE",
       });
 
-      console.log(res.ok);
-
       if (res.ok) {
         setComments(comments.filter((c) => c._id !== commentToDelete));
       }
